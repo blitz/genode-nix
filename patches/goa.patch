@@ -1,0 +1,15 @@
+diff --git a/bin/goa b/bin/goa
+index a5c23ae..d7f8882 100755
+--- a/bin/goa
++++ b/bin/goa
+@@ -356,6 +356,10 @@ proc prepare_depot_with_archives { archive_list } {
+ 		# create default depot local to the project at var/depot/
+ 		file mkdir [file dirname $depot_dir]
+ 		file copy [file join $tool_dir default_depot] $depot_dir
++
++		# Copy preserves attributes, so we might have created
++		# read-only files.
++		exec chmod -R +w $depot_dir
+ 	}
+ 
+ 	# create list of depot users without duplicates

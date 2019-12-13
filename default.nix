@@ -5,5 +5,5 @@ rec {
 
   toolchain = pkgs.callPackage ./pkgs/toolchain.nix {};
 
-  goa = pkgs.callPackage ./pkgs/goa.nix { inherit toolchain; };
+  goa = pkgs.callPackage ./pkgs/goa.nix { inherit toolchain sources; };
 }

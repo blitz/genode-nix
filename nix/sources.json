@@ -1,4 +1,16 @@
 {
+    "goa": {
+        "branch": "master",
+        "description": "Tool for streamlining the development of Genode applications",
+        "homepage": null,
+        "owner": "nfeske",
+        "repo": "goa",
+        "rev": "c7ec056bbd06e35de4838c8ac2592103c42fb01a",
+        "sha256": "0yy04dnynx4j58hm9mwb5r74hm2lzlmkms6bsd3nkjdl57pxi9xq",
+        "type": "tarball",
+        "url": "https://github.com/nfeske/goa/archive/c7ec056bbd06e35de4838c8ac2592103c42fb01a.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "nixpkgs": {
         "branch": "nixos-19.09",
         "description": "A read-only mirror of NixOS/nixpkgs tracking the released channels. Send issues and PRs to",
